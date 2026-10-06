@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+</head>
+
+<body>
+<label for="full-name">Full name</label>
+<input type="text" id="full-name" name="full-name"required minlength="3">
+<br>
+<br>
+<label for="email">Email</label>
+<input for="text" id="Email" name="Email" required></input>
+<label for="password">Password</label>
+<input type="password" id="password" name="password" required minlength="8">
+<br>
+<br>
+<label for="country">Country</label>
+
+<select id="country" name="country" required>
+    <option value="">Select your country</option>
+    <option value="jordan">Jordan</option>
+    <option value="usa">United States</option>
+    <option value="uk">United Kingdom</option>
+</select>
+<hr>
+<label>Account Type</label>
+<br>
+<input type="radio" id="student" name="account-type" value="student" required>
+<label for="student">Student</label>
+<br>
+<input type="radio" id="professional" name="account-type" value="professional">
+<label for="professional">Professional</label>
+<br>
+<hr>>
+<label for="about">About You</label>
+
+<textarea id="about" name="about" required minlength="10"></textarea>
+<br>
+<br>
+<input type="checkbox" id="agreement" name="agreement" required> 
+<label for="agreement">I agree to the terms and conditions</label>
+
+
+</body>
+</html>
