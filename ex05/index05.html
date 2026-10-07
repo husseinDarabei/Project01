@@ -1,43 +1,104 @@
-<!DOCTYPE htnl>
-<html lang ="en">    
-<header>
-    My Technical Blog
-</header>
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
 
-<nav>
-    Home
-    Articles
-    About
-</nav>
+    <h1>User Registration</h1>
 
-<main>
+    <form>
 
-    <section>
-        Latest Technical Articles
+        <label for="full-name">Full Name</label>
+        <input
+            type="text"
+            id="full-name"
+            name="full-name"
+            required
+            minlength="3"
+        >
 
-        <article>
-            Networking Basics
+        <br><br>
 
-            This article introduces the basic concepts of computer networking.
-        </article>
+        <label for="email">Email</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            required
+        >
 
-        <article>
-            Introduction to Cybersecurity
+        <br><br>
 
-            This article discusses basic cybersecurity concepts and network security.
-        </article>
+        <label for="password">Password</label>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            minlength="8"
+        >
 
-    </section>
+        <br><br>
 
-    <aside>
-        Related Topics
+        <label>Gender</label>
 
-        Networking, Cybersecurity, Linux, and Programming.
-    </aside>
+        <input
+            type="radio"
+            id="male"
+            name="gender"
+            value="male"
+            required
+        >
+        <label for="male">Male</label>
 
-</main>
+        <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+        >
+        <label for="female">Female</label>
 
-<footer>
-    Copyright 2026 My Technical Blog
-</footer>
+        <br><br>
+
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+            <option value="">Select a country</option>
+            <option value="jordan">Jordan</option>
+            <option value="saudi-arabia">Saudi Arabia</option>
+            <option value="uae">United Arab Emirates</option>
+            <option value="palestine">Palestine</option>
+        </select>
+
+        <br><br>
+
+        <label for="message">About You</label>
+        <textarea
+            id="message"
+            name="message"
+            required
+            minlength="10"
+        ></textarea>
+
+        <br><br>
+
+        <input
+            type="checkbox"
+            id="agreement"
+            name="agreement"
+            required
+        >
+        <label for="agreement">I agree to the terms and conditions</label>
+
+        <br><br>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+</body>
 </html>
+```
